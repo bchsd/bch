@@ -10917,3 +10917,12 @@ footer.footer {
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
+/* Custom styles added for Mental Health Awareness */
+
+body {
+  background-color: #f1f9f6;
+}
+
+h1, h2 {
+  color: #2f855a;
+}
