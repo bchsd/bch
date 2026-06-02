@@ -38,12 +38,15 @@ html(lang='en')
             .carousel.slide#mastheadCarousel(data-bs-ride='carousel')
                 .carousel-inner
                     .carousel-item.active
-                        img(src='/assets/img/bg-masthead.jpg', alt='Slide 1')
+                        img(src='/assets/img/main-showcase-1.jpg', alt='Slide 1')
                     .carousel-item
-                        img(src='/assets/img/bg-showcase-1.jpg', alt='Slide 2')
+                        img(src='/assets/img/main-showcase-2.jpg', alt='Slide 2')
                     .carousel-item
-                        img(src='/assets/img/bg-showcase-2.jpg', alt='Slide 3')
-            
+                        img(src='/assets/img/main-showcase-3.jpg', alt='Slide 3')
+                    .carousel-item
+                        img(src='/assets/img/main-showcase-4.jpg', alt='Slide 4')
+                    .carousel-item
+                        img(src='/assets/img/main-showcase-5.jpg', alt='Slide 5')                                    
             // Text overlay
             .position-absolute.top-50.start-50.translate-middle.text-center.text-white
                 h1.display-2 Belonging, Community, Hope
@@ -52,25 +55,52 @@ html(lang='en')
         // Icons Grid
         section.features-icons.bg-light.text-center
             .container
+                .row.mb-2
+                    .col-lg-4.mx-auto
+                        h1 Our Services
+                        p.lead.mb-0 Programs that help individuals build skills, confidence, and belonging.
                 .row
-                    .col-lg-4
+                    .col-md-6.col-lg-2
                         .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
                             .features-icons-icon.d-flex
-                                i.bi-window.m-auto.text-primary
-                            h3 Fully Responsive
-                            p.lead.mb-0 This theme will look great on any device, no matter the size!
-                    .col-lg-4
+                                i.bi-people.m-auto.text-primary
+                            h3 Social Connection
+                            p.lead.mb-0 Build friendships and connect.
+
+                    .col-md-6.col-lg-2
                         .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
                             .features-icons-icon.d-flex
-                                i.bi-layers.m-auto.text-primary
-                            h3 Bootstrap 5 Ready
-                            p.lead.mb-0 Featuring the latest build of the new Bootstrap 5 framework!
-                    .col-lg-4
+                                i.bi-translate.m-auto.text-primary
+                            h3 ESL Classes
+                            p.lead.mb-0 Learn English at your own pace.
+
+                    .col-md-6.col-lg-2
+                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                            .features-icons-icon.d-flex
+                                i.bi-patch-check.m-auto.text-primary
+                            h3 Citizenship
+                            p.lead.mb-0 Get help preparing to apply.
+
+                    .col-md-6.col-lg-2
+                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                            .features-icons-icon.d-flex
+                                i.bi-briefcase.m-auto.text-primary
+                            h3 Employment
+                            p.lead.mb-0 Build skills and find work.
+
+                    .col-md-6.col-lg-2
+                        .features-icons-item.mx-auto.mb-5.mb-lg-0.mb-lg-3
+                            .features-icons-icon.d-flex
+                                i.bi-egg-fried.m-auto.text-primary
+                            h3 Cooking
+                            p.lead.mb-0 Cook, share, and learn together.
+
+                    .col-md-6.col-lg-2
                         .features-icons-item.mx-auto.mb-0.mb-lg-3
                             .features-icons-icon.d-flex
-                                i.bi-terminal.m-auto.text-primary
-                            h3 Easy to Use
-                            p.lead.mb-0 Ready to use with your own content, or customize the source files!
+                                i.bi-laptop.m-auto.text-primary
+                            h3 Digital Skills
+                            p.lead.mb-0 Learn computers and online tools.
 
         // Image Showcases
         section.showcase

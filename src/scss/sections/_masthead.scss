@@ -13,7 +13,7 @@ header.masthead {
     &:before {
         content: '';
         position: absolute;
-        background-color: mix($gray-900, $primary, 65%);
+        background-color: mix($gray-900, $primary, 20%);
         height: 100%;
         width: 100%;
         top: 0;

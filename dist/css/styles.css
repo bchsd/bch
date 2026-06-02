@@ -10846,7 +10846,7 @@ header.masthead {
 header.masthead:before {
   content: "";
   position: absolute;
-  background-color: #1a3f73;
+  background-color: #115fd3;
   height: 100%;
   width: 100%;
   top: 0;
