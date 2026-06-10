@@ -29,8 +29,20 @@ html(lang='en')
             .container
                 a.navbar-brand(href='#')
                     img(src='assets/favicon.ico', alt='Logo', height='50', class='d-inline-block align-middle mr-2')
-                    span.fs-3.align-middle Bridges Community House
-                //- a.btn.btn-primary(href='#signup') Sign Up
+                    span.fs-3.align-middle.text-primary Bridges Community House
+                // Hamburger Menu Button (Visible on mobile)
+                button.navbar-toggler.border-primary.text-primary(type='button', data-bs-toggle='collapse', data-bs-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon.text-primary
+        
+                // Collapsible Menu Content
+                #navbarNav.collapse.navbar-collapse.justify-content-center
+                    ul.navbar-nav.align-items-center
+                        li.nav-item
+                            a.nav-link.text-primary.link-primary(href='#services') Services
+                        li.nav-item
+                            a.nav-link.text-primary.link-primary(href='#features') About Us
+                        li.nav-item
+                            a.nav-link.text-primary.link-primary(href='#signup') Contact
 
         // Masthead
         header.masthead.position-relative
@@ -53,7 +65,7 @@ html(lang='en')
                 p.lead Empowering Adults, Enriching Lives
 
         // Icons Grid
-        section.features-icons.bg-light.text-center
+        section#services.features-icons.bg-light.text-center
             .container
                 .row.mb-2
                     .col-lg-4.mx-auto
