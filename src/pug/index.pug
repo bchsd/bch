@@ -38,11 +38,11 @@ html(lang='en')
                 #navbarNav.collapse.navbar-collapse.justify-content-center
                     ul.navbar-nav.align-items-center
                         li.nav-item
+                            a.nav-link.text-primary.link-primary(href='#about') About Us
+                        li.nav-item
                             a.nav-link.text-primary.link-primary(href='#services') Services
                         li.nav-item
-                            a.nav-link.text-primary.link-primary(href='#features') About Us
-                        li.nav-item
-                            a.nav-link.text-primary.link-primary(href='#signup') Contact
+                            a.nav-link.text-primary.link-primary(href='#contactus') Contact Us
 
         // Masthead
         header.masthead.position-relative
@@ -63,6 +63,53 @@ html(lang='en')
             .position-absolute.top-50.start-50.translate-middle.text-center.text-white
                 h1.display-2 Belonging, Community, Hope
                 p.lead Empowering Adults, Enriching Lives
+
+        // About Us Section
+        section#about.py-5.bg-white
+            .container
+                // Section Title
+                .row.mb-5
+                    .col-12.text-center
+                        h2.fw-bold.mb-2 ABOUT US
+                        p.text-muted.text-uppercase.tracking-wider Who We Are &amp; What We Stand For
+
+                .row.g-4.align-items-stretch
+                    // Left Column: Core Mission Card
+                    .col-md-6
+                        .card.h-100.border-0.bg-light.shadow-sm.p-4.p-lg-5
+                            .card-body.d-flex.flex-column.justify-content-center
+                                span.text-primary.fs-1.mb-3
+                                    i.bi.bi-quote
+                                h3.h4.fw-bold.text-primary.mb-3 Our Mission
+                                p.card-text.fs-5.text-dark.lh-base
+                                    | To support adults (18+) facing mental health challenges by creating welcoming, 
+                                    | community-based spaces where people can connect, learn practical life skills, 
+                                    | and feel supported in their everyday lives. 
+                                p.card-text.text-muted.mb-0
+                                    | We focus on building genuine relationships, reducing isolation, and 
+                                    | helping individuals grow with confidence and stability.
+
+                    // Right Column: Diversity & Community Commitment
+                    .col-md-6.d-flex.flex-column.justify-content-center.p-4.p-lg-5
+                        h3.h4.fw-bold.text-dark.mb-4 Our Commitment to Diversity
+                        p.text-secondary.fs-6.lh-lg.mb-4
+                            | We are committed to serving diverse communities, including immigrants and refugees, 
+                            | by offering programs that respect cultural and language needs.
+                        
+                        // Key pillars broken into a micro-list for better scannability
+                        .d-flex.align-items-start.mb-3
+                            .badge.bg-primary-subtle.text-primary.rounded-circle.p-2.me-3
+                                i.bi.bi-people-fill
+                            div
+                                h5.fs-6.fw-bold.mb-1 Community Partnerships
+                                p.text-muted.small.mb-0 Collaborating locally to expand access to meaningful connections.
+                        
+                        .d-flex.align-items-start
+                            .badge.bg-primary-subtle.text-primary.rounded-circle.p-2.me-3
+                                i.bi.bi-heart-fill
+                            div
+                                h5.fs-6.fw-bold.mb-1 Inclusive Spaces
+                                p.text-muted.small.mb-0 Ensuring everyone has a safe, supportive place to belong and thrive.
 
         // Icons Grid
         section#services.features-icons.bg-light.text-center
@@ -180,55 +227,91 @@ html(lang='en')
                             h5 Sarah W.
                             p.font-weight-light.mb-0 "Thanks so much for making these free resources available to us!"
 
+        // Schedule Section
+        section#schedule.py-5.bg-white
+            .container
+                .row.justify-content-center
+                    .col-lg-8.text-center
+                        // Section Heading
+                        h2.mb-4.text-center.fw-bold DAILY SCHEDULE (ADJUSTED FOR MIXED AGES)
+                        span.badge.bg-primary.px-3.py-2.fs-6 Monday – Friday, 9 AM – 5 PM PST
+
+                        // Schedule List Container
+                        .list-group.shadow-sm.pt-2
+                            
+                            // Item 1
+                            .list-group-item.p-3
+                                .d-flex.flex-column.flex-md-row
+                                    span.fw-bold.text-primary.me-4.min-w-150 9:00 – 9:30 AM
+                                    div Open social time (all participants)
+                            
+                            // Item 2
+                            .list-group-item.p-3
+                                .d-flex.flex-column.flex-md-row
+                                    span.fw-bold.text-primary.me-4.min-w-150 9:30 – 10:30 AM
+                                    div ESL / Citizenship (grouped by level)
+                            
+                            // Item 3 (Break)
+                            .list-group-item.p-3.bg-light
+                                .d-flex.flex-column.flex-md-row
+                                    span.fw-bold.text-muted.me-4.min-w-150 10:30 – 11:00 AM
+                                    div.text-muted.fst-italic Break
+                            
+                            // Item 4 (Nested Breakouts)
+                            .list-group-item.p-3
+                                .d-flex.flex-column.flex-md-row
+                                    span.fw-bold.text-primary.me-4.min-w-150 11:00 – 12:00 PM
+                                    div
+                                        .fw-bold Breakout sessions:
+                                        ul.list-unstyled.ms-3.mt-2.mb-0
+                                            li.mb-1
+                                                i.bi.bi-arrow-right-short.text-primary.me-1
+                                                | Employment support (younger adults)
+                                            li
+                                                i.bi.bi-arrow-right-short.text-primary.me-1
+                                                | Social/wellness group (older adults)
+                            
+                            // Item 5
+                            .list-group-item.p-3
+                                .d-flex.flex-column.flex-md-row
+                                    span.fw-bold.text-primary.me-4.min-w-150 12:00 – 1:00 PM
+                                    div Cooking &amp; shared meal (all together)
+                            
+                            // Item 6
+                            .list-group-item.p-3
+                                .d-flex.flex-column.flex-md-row
+                                    span.fw-bold.text-primary.me-4.min-w-150 1:00 – 2:00 PM
+                                    div Flexible activities (mixed or grouped)
+
         // Call to Action
-        section#signup.call-to-action.text-white.text-center
+        section#contactus.call-to-action.bg-light.text-white.text-center
             .container.position-relative
                 .row.justify-content-center
                     .col-xl-6
-                        h2.mb-4 Ready to get started? Sign up now!
-                        // Signup form
-                        
-                        // * * * * * * * * * * * * * * *
-                        // * * SB Forms Contact Form * *
-                        // * * * * * * * * * * * * * * *
+                        h2.mb-4 Have questions or need support?
+                        p.mb-4 We’re here to help Monday – Friday, 9 AM – 5 PM PST.
 
-                        // This form is pre-integrated with SB Forms.
-                        // To make this form functional, sign up at
-                        // https://startbootstrap.com/solution/contact-forms
-                        // to get an API token!
+                        // Contact Email
+                        p.mb-2
+                            strong Email:
+                            a.text-white.ms-2(href='mailto:bridgescommunityhouse@gmail.com')
+                                | bridgescommunityhouse@gmail.com
 
-                        form.form-subscribe#contactFormFooter(data-sb-form-api-token='API_TOKEN')
+                        // Phone Number
+                        p.mb-2
+                            strong Phone:
+                            a.text-white.ms-2(href='tel:+18583308172')
+                                | (858) 330-8172
 
-                            // Email address input
-                            .row
-                                .col
-                                    input#emailAddressBelow.form-control.form-control-lg(type='email' placeholder='Email Address' data-sb-validations='required,email')
-                                    .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:required')
-                                        | Email Address is required.
-                                    .invalid-feedback.text-white(data-sb-feedback='emailAddressBelow:email')
-                                        | Email Address Email is not valid.
+                        // Physical Address
+                        p.mb-4
+                            strong Address:
+                            |  9504 Carroll Canyon Rd, San Diego, CA 92126
 
-                                .col-auto
-                                    button#submitButton.btn.btn-primary.btn-lg.disabled(type='submit') Submit
+                        // Email button
+                        a.btn.btn-primary(href='mailto:bridgescommunityhouse@gmail.com')
+                            | Email
 
-                            // Submit success message
-                            //
-                            // This is what your users will see when the form
-                            // has successfully submitted
-
-                            #submitSuccessMessage.d-none
-                                .text-center.mb-3
-                                    .fw-bolder Form submission successful!
-                                    p To activate this form, sign up at
-                                    a.text-white(href='https://startbootstrap.com/solution/contact-forms') https://startbootstrap.com/solution/contact-forms
-
-                            // Submit error message
-                            //
-                            // This is what your users will see when there is
-                            // an error submitting the form
-
-                            #submitErrorMessage.d-none
-                                .text-center.text-danger.mb-3 Error sending message!
 
         // Footer
         footer.footer.bg-light

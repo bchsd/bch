@@ -28,9 +28,9 @@
                 <!-- Collapsible Menu Content-->
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#about">About Us</a></li>
                         <li class="nav-item"><a class="nav-link text-primary link-primary" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#features">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#signup">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#contactus">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -53,6 +53,51 @@
                 <p class="lead">Empowering Adults, Enriching Lives</p>
             </div>
         </header>
+        <!-- About Us Section-->
+        <section class="py-5 bg-white" id="about">
+            <div class="container">
+                <!-- Section Title-->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold mb-2">ABOUT US</h2>
+                        <p class="text-muted text-uppercase tracking-wider">Who We Are &amp; What We Stand For</p>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <!-- Left Column: Core Mission Card-->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 bg-light shadow-sm p-4 p-lg-5">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <span class="text-primary fs-1 mb-3"><i class="bi bi-quote"></i></span>
+                                <h3 class="h4 fw-bold text-primary mb-3">Our Mission</h3>
+                                <p class="card-text fs-5 text-dark lh-base">To support adults (18+) facing mental health challenges by creating welcoming, community-based spaces where people can connect, learn practical life skills, and feel supported in their everyday lives.</p>
+                                <p class="card-text text-muted mb-0">We focus on building genuine relationships, reducing isolation, and helping individuals grow with confidence and stability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Diversity & Community Commitment-->
+                    <div class="col-md-6 d-flex flex-column justify-content-center p-4 p-lg-5">
+                        <h3 class="h4 fw-bold text-dark mb-4">Our Commitment to Diversity</h3>
+                        <p class="text-secondary fs-6 lh-lg mb-4">We are committed to serving diverse communities, including immigrants and refugees, by offering programs that respect cultural and language needs.</p>
+                        <!-- Key pillars broken into a micro-list for better scannability-->
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="badge bg-primary-subtle text-primary rounded-circle p-2 me-3"><i class="bi bi-people-fill"></i></div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1">Community Partnerships</h5>
+                                <p class="text-muted small mb-0">Collaborating locally to expand access to meaningful connections.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="badge bg-primary-subtle text-primary rounded-circle p-2 me-3"><i class="bi bi-heart-fill"></i></div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1">Inclusive Spaces</h5>
+                                <p class="text-muted small mb-0">Ensuring everyone has a safe, supportive place to belong and thrive.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Icons Grid-->
         <section class="features-icons bg-light text-center" id="services">
             <div class="container">
@@ -184,47 +229,99 @@
                 </div>
             </div>
         </section>
+        <!-- Schedule Section-->
+        <section class="py-5 bg-white" id="schedule">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <!-- Section Heading-->
+                        <h2 class="mb-4 text-center fw-bold">DAILY SCHEDULE (ADJUSTED FOR MIXED AGES)</h2>
+                        <span class="badge bg-primary px-3 py-2 fs-6">Monday – Friday, 9 AM – 5 PM PST</span>
+                        <!-- Schedule List Container-->
+                        <div class="list-group shadow-sm pt-2">
+                            <!-- Item 1-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">9:00 – 9:30 AM</span>
+                                    <div>Open social time (all participants)</div>
+                                </div>
+                            </div>
+                            <!-- Item 2-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">9:30 – 10:30 AM</span>
+                                    <div>ESL / Citizenship (grouped by level)</div>
+                                </div>
+                            </div>
+                            <!-- Item 3 (Break)-->
+                            <div class="list-group-item p-3 bg-light">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-muted me-4 min-w-150">10:30 – 11:00 AM</span>
+                                    <div class="text-muted fst-italic">Break</div>
+                                </div>
+                            </div>
+                            <!-- Item 4 (Nested Breakouts)-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">11:00 – 12:00 PM</span>
+                                    <div>
+                                        <div class="fw-bold">Breakout sessions:</div>
+                                        <ul class="list-unstyled ms-3 mt-2 mb-0">
+                                            <li class="mb-1">
+                                                <i class="bi bi-arrow-right-short text-primary me-1"></i>
+                                                Employment support (younger adults)
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-arrow-right-short text-primary me-1"></i>
+                                                Social/wellness group (older adults)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 5-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">12:00 – 1:00 PM</span>
+                                    <div>Cooking &amp; shared meal (all together)</div>
+                                </div>
+                            </div>
+                            <!-- Item 6-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">1:00 – 2:00 PM</span>
+                                    <div>Flexible activities (mixed or grouped)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Call to Action-->
-        <section class="call-to-action text-white text-center" id="signup">
+        <section class="call-to-action bg-light text-white text-center" id="contactus">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
+                        <h2 class="mb-4">Have questions or need support?</h2>
+                        <p class="mb-4">We’re here to help Monday – Friday, 9 AM – 5 PM PST.</p>
+                        <!-- Contact Email-->
+                        <p class="mb-2">
+                            <strong>Email:</strong>
+                            <a class="text-white ms-2" href="mailto:bridgescommunityhouse@gmail.com">bridgescommunityhouse@gmail.com</a>
+                        </p>
+                        <!-- Phone Number-->
+                        <p class="mb-2">
+                            <strong>Phone:</strong>
+                            <a class="text-white ms-2" href="tel:+18583308172">(858) 330-8172</a>
+                        </p>
+                        <!-- Physical Address-->
+                        <p class="mb-4">
+                            <strong>Address:</strong>
+                            9504 Carroll Canyon Rd, San Diego, CA 92126
+                        </p>
+                        <!-- Email button-->
+                        <a class="btn btn-primary" href="mailto:bridgescommunityhouse@gmail.com">Email</a>
                     </div>
                 </div>
             </div>
