@@ -5,95 +5,149 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Landing Page - Start Bootstrap Theme</title>
+        <title>Bridges Community House</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Fredoka:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
+        <nav class="navbar navbar-light bg-light sticky-top">
             <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <a class="btn btn-primary" href="#signup">Sign Up</a>
+                <a class="navbar-brand" href="#">
+                    <img class="d-inline-block align-middle mr-2" src="assets/favicon.ico" alt="Logo" height="50" />
+                    <span class="fs-3 align-middle text-primary">Bridges Community House</span>
+                </a>
+                <!-- Hamburger Menu Button (Visible on mobile)-->
+                <button class="navbar-toggler border-primary text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon text-primary"></span></button>
+                <!-- Collapsible Menu Content-->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link text-primary link-primary" href="#contactus">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">Generate more leads with a professional landing page!</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Form submission successful!</div>
-                                        <p>To activate this form, sign up at</p>
-                                        <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            </form>
+        <header class="masthead position-relative">
+            <!-- Carousel background-->
+            <div class="carousel slide" id="mastheadCarousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="/assets/img/main-showcase-1.jpg" alt="Slide 1" /></div>
+                    <div class="carousel-item"><img src="/assets/img/main-showcase-2.jpg" alt="Slide 2" /></div>
+                    <div class="carousel-item"><img src="/assets/img/main-showcase-3.jpg" alt="Slide 3" /></div>
+                    <div class="carousel-item"><img src="/assets/img/main-showcase-4.jpg" alt="Slide 4" /></div>
+                    <div class="carousel-item"><img src="/assets/img/main-showcase-5.jpg" alt="Slide 5" /></div>
+                </div>
+            </div>
+            <!-- Text overlay-->
+            <div class="position-absolute top-50 start-50 translate-middle text-center text-white">
+                <h1 class="display-2">Belonging, Community, Hope</h1>
+                <p class="lead">Empowering Adults, Enriching Lives</p>
+            </div>
+        </header>
+        <!-- About Us Section-->
+        <section class="py-5 bg-white" id="about">
+            <div class="container">
+                <!-- Section Title-->
+                <div class="row mb-5">
+                    <div class="col-12 text-center">
+                        <h2 class="fw-bold mb-2">ABOUT US</h2>
+                        <p class="text-muted text-uppercase tracking-wider">Who We Are &amp; What We Stand For</p>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-stretch">
+                    <!-- Left Column: Core Mission Card-->
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 bg-light shadow-sm p-4 p-lg-5">
+                            <div class="card-body d-flex flex-column justify-content-center">
+                                <span class="text-primary fs-1 mb-3"><i class="bi bi-quote"></i></span>
+                                <h3 class="h4 fw-bold text-primary mb-3">Our Mission</h3>
+                                <p class="card-text fs-5 text-dark lh-base">To support adults (18+) facing mental health challenges by creating welcoming, community-based spaces where people can connect, learn practical life skills, and feel supported in their everyday lives.</p>
+                                <p class="card-text text-muted mb-0">We focus on building genuine relationships, reducing isolation, and helping individuals grow with confidence and stability.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Right Column: Diversity & Community Commitment-->
+                    <div class="col-md-6 d-flex flex-column justify-content-center p-4 p-lg-5">
+                        <h3 class="h4 fw-bold text-dark mb-4">Our Commitment to Diversity</h3>
+                        <p class="text-secondary fs-6 lh-lg mb-4">We are committed to serving diverse communities, including immigrants and refugees, by offering programs that respect cultural and language needs.</p>
+                        <!-- Key pillars broken into a micro-list for better scannability-->
+                        <div class="d-flex align-items-start mb-3">
+                            <div class="badge bg-primary-subtle text-primary rounded-circle p-2 me-3"><i class="bi bi-people-fill"></i></div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1">Community Partnerships</h5>
+                                <p class="text-muted small mb-0">Collaborating locally to expand access to meaningful connections.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="badge bg-primary-subtle text-primary rounded-circle p-2 me-3"><i class="bi bi-heart-fill"></i></div>
+                            <div>
+                                <h5 class="fs-6 fw-bold mb-1">Inclusive Spaces</h5>
+                                <p class="text-muted small mb-0">Ensuring everyone has a safe, supportive place to belong and thrive.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
+        </section>
         <!-- Icons Grid-->
-        <section class="features-icons bg-light text-center">
+        <section class="features-icons bg-light text-center" id="services">
             <div class="container">
+                <div class="row mb-2">
+                    <div class="col-lg-4 mx-auto">
+                        <h1>Our Services</h1>
+                        <p class="lead mb-0">Programs that help individuals build skills, confidence, and belonging.</p>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-2">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-window m-auto text-primary"></i></div>
-                            <h3>Fully Responsive</h3>
-                            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+                            <div class="features-icons-icon d-flex"><i class="bi-people m-auto text-primary"></i></div>
+                            <h3>Social Connection</h3>
+                            <p class="lead mb-0">Build friendships and connect.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-2">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-layers m-auto text-primary"></i></div>
-                            <h3>Bootstrap 5 Ready</h3>
-                            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 5 framework!</p>
+                            <div class="features-icons-icon d-flex"><i class="bi-translate m-auto text-primary"></i></div>
+                            <h3>ESL Classes</h3>
+                            <p class="lead mb-0">Learn English at your own pace.</p>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-6 col-lg-2">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-patch-check m-auto text-primary"></i></div>
+                            <h3>Citizenship</h3>
+                            <p class="lead mb-0">Get help preparing to apply.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-briefcase m-auto text-primary"></i></div>
+                            <h3>Employment</h3>
+                            <p class="lead mb-0">Build skills and find work.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
+                        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                            <div class="features-icons-icon d-flex"><i class="bi-egg-fried m-auto text-primary"></i></div>
+                            <h3>Cooking</h3>
+                            <p class="lead mb-0">Cook, share, and learn together.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-2">
                         <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                            <div class="features-icons-icon d-flex"><i class="bi-terminal m-auto text-primary"></i></div>
-                            <h3>Easy to Use</h3>
-                            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+                            <div class="features-icons-icon d-flex"><i class="bi-laptop m-auto text-primary"></i></div>
+                            <h3>Digital Skills</h3>
+                            <p class="lead mb-0">Learn computers and online tools.</p>
                         </div>
                     </div>
                 </div>
@@ -103,24 +157,45 @@
         <section class="showcase">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-1.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/main-showcase-1.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Fully Responsive Design</h2>
-                        <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+                        <h2>Social Connection</h2>
+                        <p class="lead mb-0">Build friendships, reduce isolation, and strengthen community through peer mentorship, intergenerational activities, and meaningful social engagement.</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-2.jpg')"></div>
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/main-showcase-2.jpg')"></div>
                     <div class="col-lg-6 my-auto showcase-text">
-                        <h2>Updated For Bootstrap 5</h2>
-                        <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 5 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 5!</p>
+                        <h2>ESL Classes</h2>
+                        <p class="lead mb-0">Learn English through beginner, intermediate, and conversation-focused classes designed to support participants at different language levels.</p>
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/bg-showcase-3.jpg')"></div>
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/main-showcase-3.jpg')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Easy to Use & Customize</h2>
-                        <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+                        <h2>Citizenship Support</h2>
+                        <p class="lead mb-0">Receive personalized guidance and small-group support to prepare for the citizenship process with confidence.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/main-showcase-4.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Employment Support</h2>
+                        <p class="lead mb-0">Develop job-ready skills through computer training, online applications, workplace communication, resume writing, and interview preparation.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/img/main-showcase-5.jpg')"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Cooking & Life Skills</h2>
+                        <p class="lead mb-0">Share practical knowledge, learn everyday skills, and connect across generations through hands-on cooking and community activities.</p>
+                    </div>
+                </div>
+                <div class="row g-0">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/img/main-showcase-3.jpg')"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Digital Skills</h2>
+                        <p class="lead mb-0">Learn to use computers, smartphones, email, and online services with confidence for everyday life and work.</p>
                     </div>
                 </div>
             </div>
@@ -154,47 +229,99 @@
                 </div>
             </div>
         </section>
+        <!-- Schedule Section-->
+        <section class="py-5 bg-white" id="schedule">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <!-- Section Heading-->
+                        <h2 class="mb-4 text-center fw-bold">DAILY SCHEDULE (ADJUSTED FOR MIXED AGES)</h2>
+                        <span class="badge bg-primary px-3 py-2 fs-6">Monday – Friday, 9 AM – 5 PM PST</span>
+                        <!-- Schedule List Container-->
+                        <div class="list-group shadow-sm pt-2">
+                            <!-- Item 1-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">9:00 – 9:30 AM</span>
+                                    <div>Open social time (all participants)</div>
+                                </div>
+                            </div>
+                            <!-- Item 2-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">9:30 – 10:30 AM</span>
+                                    <div>ESL / Citizenship (grouped by level)</div>
+                                </div>
+                            </div>
+                            <!-- Item 3 (Break)-->
+                            <div class="list-group-item p-3 bg-light">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-muted me-4 min-w-150">10:30 – 11:00 AM</span>
+                                    <div class="text-muted fst-italic">Break</div>
+                                </div>
+                            </div>
+                            <!-- Item 4 (Nested Breakouts)-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">11:00 – 12:00 PM</span>
+                                    <div>
+                                        <div class="fw-bold">Breakout sessions:</div>
+                                        <ul class="list-unstyled ms-3 mt-2 mb-0">
+                                            <li class="mb-1">
+                                                <i class="bi bi-arrow-right-short text-primary me-1"></i>
+                                                Employment support (younger adults)
+                                            </li>
+                                            <li>
+                                                <i class="bi bi-arrow-right-short text-primary me-1"></i>
+                                                Social/wellness group (older adults)
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Item 5-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">12:00 – 1:00 PM</span>
+                                    <div>Cooking &amp; shared meal (all together)</div>
+                                </div>
+                            </div>
+                            <!-- Item 6-->
+                            <div class="list-group-item p-3">
+                                <div class="d-flex flex-column flex-md-row">
+                                    <span class="fw-bold text-primary me-4 min-w-150">1:00 – 2:00 PM</span>
+                                    <div>Flexible activities (mixed or grouped)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Call to Action-->
-        <section class="call-to-action text-white text-center" id="signup">
+        <section class="call-to-action bg-light text-white text-center" id="contactus">
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-xl-6">
-                        <h2 class="mb-4">Ready to get started? Sign up now!</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
+                        <h2 class="mb-4">Have questions or need support?</h2>
+                        <p class="mb-4">We’re here to help Monday – Friday, 9 AM – 5 PM PST.</p>
+                        <!-- Contact Email-->
+                        <p class="mb-2">
+                            <strong>Email:</strong>
+                            <a class="text-white ms-2" href="mailto:bridgescommunityhouse@gmail.com">bridgescommunityhouse@gmail.com</a>
+                        </p>
+                        <!-- Phone Number-->
+                        <p class="mb-2">
+                            <strong>Phone:</strong>
+                            <a class="text-white ms-2" href="tel:+18583308172">(858) 330-8172</a>
+                        </p>
+                        <!-- Physical Address-->
+                        <p class="mb-4">
+                            <strong>Address:</strong>
+                            9504 Carroll Canyon Rd, San Diego, CA 92126
+                        </p>
+                        <!-- Email button-->
+                        <a class="btn btn-primary" href="mailto:bridgescommunityhouse@gmail.com">Email</a>
                     </div>
                 </div>
             </div>
