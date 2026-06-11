@@ -4,33 +4,34 @@
 
 header.masthead {
     position: relative;
-    background-color: $gray-800;
-    background: url('../assets/img/bg-masthead.jpg') no-repeat center center;
-    background-size: cover;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    overflow: hidden;
 
+    // Remove old background image
+    background: none;
+
+    // Overlay
     &:before {
         content: '';
         position: absolute;
-        background-color: mix($gray-900, $primary, 75%);
+        background-color: mix($gray-900, $primary, 20%);
         height: 100%;
         width: 100%;
         top: 0;
         left: 0;
-        opacity: 0.5;
+        opacity: 0.3;
+        z-index: 2;
     }
 
-    h1 {
-        font-size: 2rem;
+    // Carousel fills the masthead
+    .carousel,
+    .carousel-inner,
+    .carousel-item {
+        height: 100%;
     }
 
-    @media (min-width: 768px) {
-        padding-top: 12rem;
-        padding-bottom: 12rem;
-
-        h1 {
-            font-size: 3rem;
-        }
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
     }
 }
