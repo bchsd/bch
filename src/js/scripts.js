@@ -13,3 +13,6 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
         }
     });
 });
+
+// Display current year
+document.getElementById("year").textContent = new Date().getFullYear();
