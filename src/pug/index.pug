@@ -330,13 +330,8 @@ html(lang='en')
                     .col-lg-6.h-100.text-center.text-lg-start.my-auto
                         ul.list-inline.mb-2
                             li.list-inline-item
-                                a(href='#!') About
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#!') Contact
-                            li.list-inline-item ⋅
-                            li.list-inline-item
-                                a(href='#!') Terms of Use
+                                a(href="#", role="button", data-bs-toggle="modal", data-bs-target="#termsModal")
+                                    | Terms of Use
                             li.list-inline-item ⋅
                             li.list-inline-item
                                 a(href='#!') Privacy Policy
@@ -355,6 +350,47 @@ html(lang='en')
                             li.list-inline-item
                                 a(href='#!')
                                     i.bi-instagram.fs-3
+
+        // Terms of Use Modal
+        div#termsModal.modal.fade(tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true")
+            div.modal-dialog.modal-lg
+                div.modal-content
+                    div.modal-header
+                        h5#termsModalLabel.modal-title Terms of Use
+                        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+
+                    div.modal-body
+                        h6 Introduction
+                        p
+                        | By accessing and using this website, you agree to comply with these Terms of Use. 
+                        | Please read them carefully before continuing.
+
+                        h6.pt-2 Acceptable Use
+                        p
+                        | You agree to use this website responsibly and only for lawful purposes. 
+                        | You may not engage in activities that disrupt the website, compromise security, 
+                        | or harm other users.
+
+                        h6.pt-2 Privacy
+                        p
+                        | We are committed to protecting your privacy. Any personal information you provide 
+                        | will be handled according to our Privacy Policy.
+
+                        h6.pt-2 Limitation of Liability
+                        p
+                        | This website is provided “as is.” We do not guarantee uninterrupted access, 
+                        | error-free operation, or the accuracy of all content. Your use of the site 
+                        | is at your own risk.
+
+                        h6.pt-2 Changes to These Terms
+                        p
+                        | We may update these Terms of Use at any time. Continued use of the website 
+                        | indicates acceptance of any changes.
+
+                    div.modal-footer.mx-auto
+                        button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Close
+                        button.btn.btn-primary(type="button" data-bs-dismiss="modal") I Agree
+
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
