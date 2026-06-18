@@ -3,9 +3,16 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
         <title>Bridges Community House</title>
+        <!-- SEO Meta Tags-->
+        <meta name="description" content="Bridges Community House - Community-based mental health support for adults (18+) in San Digeo, CA. We provide welcoming spaces, life skills training, and programs that reduce isolation and build confidence." />
+        <meta name="keywords" content="Bridges Community House - a Clubhouse provide mental health support for adults, community mental health programs, life skills training, San Diego mental health, reducing isolation" />
+        <meta name="geo.region" content="US-CA" />
+        <meta name="geo.placename" content="San Diego" />
+        <!-- Open Graph (Social Sharing)-->
+        <meta property="og:title" content="Bridges Community House - Mental Health Support for Adults in San Diego, CA" />
+        <meta property="og:description" content="Bridges Community House - Supporting adults through community-based mental health programs, life skills training, and relationship-building." />
+        <meta property="og:type" content="website" />
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -332,15 +339,15 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Contact</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
+                            <li class="list-inline-item"><a href="#" role="button" data-bs-toggle="modal" data-bs-target="#termsModal">Terms of Use</a></li>
                             <li class="list-inline-item">⋅</li>
                             <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
                         </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2023. All Rights Reserved.</p>
+                        <p class="text-muted small mb-4 mb-lg-0">
+                            ©
+                            <span id="year"></span>
+                            Your Website. All Rights Reserved.
+                        </p>
                     </div>
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
@@ -358,14 +365,41 @@
                 </div>
             </div>
         </footer>
+        <!-- Terms of Use Modal-->
+        <div class="modal fade" id="termsModal" tabindex="-1" aria-labelledby="termsModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="termsModalLabel">Terms of Use</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Introduction</h6>
+                        <p></p>
+                        By accessing and using this website, you agree to comply with these Terms of Use. Please read them carefully before continuing.
+                        <h6 class="pt-2">Acceptable Use</h6>
+                        <p></p>
+                        You agree to use this website responsibly and only for lawful purposes. You may not engage in activities that disrupt the website, compromise security, or harm other users.
+                        <h6 class="pt-2">Privacy</h6>
+                        <p></p>
+                        We are committed to protecting your privacy. Any personal information you provide will be handled according to our Privacy Policy.
+                        <h6 class="pt-2">Limitation of Liability</h6>
+                        <p></p>
+                        This website is provided “as is.” We do not guarantee uninterrupted access, error-free operation, or the accuracy of all content. Your use of the site is at your own risk.
+                        <h6 class="pt-2">Changes to These Terms</h6>
+                        <p></p>
+                        We may update these Terms of Use at any time. Continued use of the website indicates acceptance of any changes.
+                    </div>
+                    <div class="modal-footer mx-auto">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-primary" type="button" data-bs-dismiss="modal">I Agree</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
