@@ -334,7 +334,8 @@ html(lang='en')
                                     | Terms of Use
                             li.list-inline-item ⋅
                             li.list-inline-item
-                                a(href='#!') Privacy Policy
+                                a(href="#", role="button", data-bs-toggle="modal", data-bs-target="#privacyModal")
+                                    | Privacy Policy
                         p.text-muted.small.mb-4.mb-lg-0
                             | © 
                             span#year
@@ -391,6 +392,43 @@ html(lang='en')
                         button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Close
                         button.btn.btn-primary(type="button" data-bs-dismiss="modal") I Agree
 
+        div#privacyModal.modal.fade(tabindex="-1" aria-labelledby="privacyModalLabel" aria-hidden="true")
+            div.modal-dialog.modal-lg
+                div.modal-content
+                    div.modal-header
+                        h5#privacyModalLabel.modal-title Privacy Policy
+                        button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+
+                    div.modal-body
+                        h6 Introduction
+                        p
+                            | Your privacy is critically important to us. This Privacy Policy document outlines 
+                            | the types of personal information that is received and collected and how it is used.
+
+                        h6.pt-2 Information We Collect
+                        p
+                            | We may collect basic personal information such as your name, email address, contact details, 
+                            | and website usage data when you interact with our services or create an account.
+
+                        h6.pt-2 How We Use Your Information
+                        p
+                            | The information we collect is used solely to provide, maintain, and improve our services, 
+                            | process your requests, and communicate important platform updates with you.
+
+                        h6.pt-2 Cookies and Tracking
+                        p
+                            | We use standard cookies and tracking technologies to enhance your browsing experience, 
+                            | remember your preferences, and analyze site traffic. You can manage cookies via your browser settings.
+
+                        h6.pt-2 Third-Party Sharing
+                        p
+                            | We do not sell, trade, or rent your personally identifiable information to outside parties. 
+                            | We may share data with trusted service providers who assist us in operating our website, 
+                            | under strict confidentiality agreements.
+
+                    div.modal-footer.mx-auto
+                        button.btn.btn-secondary(type="button" data-bs-dismiss="modal") Close
+                        button.btn.btn-primary(type="button" data-bs-dismiss="modal") I Accept
 
         // Bootstrap core JS
         script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js')
