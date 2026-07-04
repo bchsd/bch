@@ -50,6 +50,8 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.text-primary.link-primary(href='#about') About Us
                         li.nav-item
+                            a.nav-link.text-primary.link-primary(href='#donation') Donation
+                        li.nav-item
                             a.nav-link.text-primary.link-primary(href='#services') Services
                         li.nav-item
                             a.nav-link.text-primary.link-primary(href='#contactus') Contact Us
@@ -80,7 +82,7 @@ html(lang='en')
                 // Section Title
                 .row.mb-5
                     .col-12.text-center
-                        h2.fw-bold.mb-2 ABOUT US
+                        h2.fw-bold.mb-2 About Us
                         p.text-muted.text-uppercase.tracking-wider Who We Are &amp; What We Stand For
 
                 .row.g-4.align-items-stretch
@@ -120,6 +122,24 @@ html(lang='en')
                             div
                                 h5.fs-6.fw-bold.mb-1 Inclusive Spaces
                                 p.text-muted.small.mb-0 Ensuring everyone has a safe, supportive place to belong and thrive.
+
+        // Donation Section
+        section#donation.py-5.bg-white
+            .container
+                .row.mt-5
+                    .col-12.text-center
+                        h2.fw-bold.mb-2 Support Our Mission
+                        p.text-muted.tracking-wider Your support helps us continue our mission and make a meaningful impact in our community. Every contribution, big or small, strengthens the work we do and brings us closer to creating lasting change.
+                .row.mb-5
+                    .col-12.text-center
+                        div
+                            input#recurring(type="checkbox")
+                            span(style="font-size:18px;")
+                                | Click here to set up a secure monthly recurring donation.
+                            br
+                            button(disabled style="color:#ffffff; font-size:18px; background-color:#0087a2; padding:7px 16px; display:inline-block; border-radius:3px; border:1px solid #4A90E2; box-shadow:0 2px 4px 0 rgba(0,0,0,0.25);")
+                                | DONATE NOW
+                            script(src="https://www.convergepay.com/hosted-payments/buy_button_script/736d6e79567471735336433874444e4e677a6d7875674141415a38716768594a")
 
         // Services Section
         section#services.features-icons.bg-light.text-center
@@ -243,7 +263,7 @@ html(lang='en')
                 .row.justify-content-center
                     .col-lg-8.text-center
                         // Section Heading
-                        h2.mb-4.text-center.fw-bold DAILY SCHEDULE (ADJUSTED FOR MIXED AGES)
+                        h2.mb-4.text-center.fw-bold Daily Schedule (ADJUSTED FOR MIXED AGES)
                         span.badge.bg-primary.px-3.py-2.fs-6 Monday – Friday, 9 AM – 5 PM PST
 
                         // Schedule List Container
